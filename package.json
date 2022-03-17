@@ -1,0 +1,14 @@
+{
+  "name": "@wcd/chantaltenbrink.lit-workshop-fork-l0utakhn",
+  "version": "0.0.0",
+  "description": "",
+  "license": "ISC",
+  "type": "module",
+  "homepage": "{{ homepage }}",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve FBc9cV8BkuQC9BtNDO8y --open"
+  },
+  "dependencies": {
+    "firebase": "^8.0.0"
+  }
+}
