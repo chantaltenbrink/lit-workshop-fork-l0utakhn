@@ -12,16 +12,18 @@ import { sendMessage, onMessagesUpdated } from './room-connection';
 class CustomChat extends LitElement {
 
   handleClick() {
-    username = test;
-    message = hallo!;
+    const usernameInput = this.shadowRoot.getElementById('usernameInput');
+    const messageInput = this.shadowRoot.getElementById('messageInput');
+  
+    sendMessage(usernameInput.value, messageInput.value);
   }
 
   render() {
     return html`
       <h1>Hello world!</h1>
       <!-- Render new <component-tags> here! -->
-      <input type="text" placeholder="Username..">
-      <input type="text" placeholder="Message..">
+      <input type="text" placeholder="Username.." id="usernameInput">
+      <input type="text" placeholder="Message.." id="messageInput">
       <button @click=${this.handleClick}>Send</button>
     `;
   }
